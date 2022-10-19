@@ -1,0 +1,25 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -63,6 +63,8 @@
+    target_compile_definitions(coordgen PRIVATE "DEBUG_MINIMIZATION_COORDINATES")
+ endif()
+ 
++include(GNUInstallDirs)
++
+ # Dependencies
+ if (USE_MAEPARSER)
+     if(TARGET maeparser)
+@@ -125,11 +127,11 @@
+     sketcherMinimizerResidueInteraction.h
+     sketcherMinimizerRing.h
+     sketcherMinimizerStretchInteraction.h
+-    DESTINATION include/coordgen)
++    DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/coordgen)
+ 
+ install(EXPORT coordgen-targets
+     FILE ${PROJECT_NAME}-config.cmake
+-    DESTINATION lib/cmake)
++    DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake)
+ 
+ # Example
+ if(COORDGEN_BUILD_EXAMPLE)

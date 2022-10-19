@@ -1,0 +1,139 @@
+schroedinger-coordgenlibs (3.0.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 28 Sep 2021 01:16:52 -0400
+
+schroedinger-coordgenlibs (3.0.0-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream version 3.0.0
+  * Refreshing patches.
+  * Accommodating soversion change.
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 16 Sep 2021 05:18:58 -0400
+
+schroedinger-coordgenlibs (2.0.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 2.0.3
+  * Upload to unstable.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 31 Aug 2021 00:50:13 -0400
+
+schroedinger-coordgenlibs (2.0.2-1) experimental; urgency=medium
+
+  * Team upload.
+  * Simplifying debian/watch.
+  * New upstream version 2.0.2
+
+ -- Andrius Merkys <merkys@debian.org>  Fri, 09 Apr 2021 00:35:07 -0400
+
+schroedinger-coordgenlibs (2.0.0-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream version 2.0.0
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 29 Mar 2021 00:48:09 -0400
+
+schroedinger-coordgenlibs (1.4.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.4.2
+  * Refreshing cmake_standard_dirs.patch.
+  * Bumping Standards-Version (no changes).
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 19 Oct 2020 06:10:08 -0400
+
+schroedinger-coordgenlibs (1.4.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.4.1
+  * Refreshing cmake_standard_dirs.patch.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 30 Jun 2020 01:46:08 -0400
+
+schroedinger-coordgenlibs (1.4.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Installing templates.mae to usr/share/coordgen.
+  * Bumping debhelper compat (no changes).
+  * Adding 'Rules-Requires-Root: no'.
+
+ -- Andrius Merkys <merkys@debian.org>  Tue, 12 May 2020 04:17:28 -0400
+
+schroedinger-coordgenlibs (1.4.0-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream version 1.4.0
+
+ -- Andrius Merkys <merkys@debian.org>  Thu, 07 May 2020 07:55:29 -0400
+
+schroedinger-coordgenlibs (1.3-3) unstable; urgency=medium
+
+  * Team upload.
+  * Adding missing build depends on zlib1g-dev.
+  * Using variables from /usr/share/dpkg/architecture.mk instead of defining
+    them in debian/rules.
+
+ -- Andrius Merkys <merkys@debian.org>  Mon, 06 Apr 2020 03:56:57 -0400
+
+schroedinger-coordgenlibs (1.3-2) unstable; urgency=medium
+
+  * Team upload.
+  * Wrapping and sorting.
+  * Replacing libschroedinger-maeparser-dev with libmaeparser-dev.
+
+ -- Andrius Merkys <merkys@debian.org>  Sun, 05 Apr 2020 02:42:57 -0400
+
+schroedinger-coordgenlibs (1.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches/SOVERSION.patch: Removed, no longer needed.
+  * debian/patches/cmake-config.patch: Likewise.
+  * debian/control (Build-Depends): Added libboost-iostreams-dev.
+  * debian/rules (override_dh_install): Target removed.
+  * debian/rules (override_dh_auto_configure): New target defininig
+    CMAKE_PREFIX_PATH to /usr/lib/$(DEB_HOST_MULTIARCH)/cmake.
+  * debian/patches/cmake_standard_dirs.patch: New patch, fixes installation
+    directories.
+  * debian/examples: Updated.
+  * debian/libschroedinger-coordgenlibs-dev.install: Install default files.
+  * debian/libschroedinger-coordgenlibs1.install: Likewise.
+  * debian/control (Build-Depends): Added versioned Build-Depends on
+    libschroedinger-maeparser-dev 1.2-1.
+
+ -- Michael Banck <mbanck@debian.org>  Tue, 23 Jul 2019 00:19:54 -0300
+
+schroedinger-coordgenlibs (1.1-4) unstable; urgency=medium
+
+  * debian/patches/cmake-config.patch: New patch, adds support for a
+    -config.cmake file.
+  * debian/rules (override_dh_install): Install header files into
+    /usr/include/coordgen, not /usr/include/coordgenlibs.
+  * debian/rules (override_dh_install): Install cmake files.
+
+ -- Michael Banck <mbanck@debian.org>  Sun, 21 Jul 2019 17:05:33 -0300
+
+schroedinger-coordgenlibs (1.1-3) unstable; urgency=medium
+
+  * Team upload.
+  * debian/rules (override_dh_install): Use DEB_HOST_MULTIARCH instead of
+    DEB_BUILD_GNU_TYPE. 
+
+ -- Michael Banck <mbanck@debian.org>  Thu, 31 Jan 2019 16:33:22 +0100
+
+schroedinger-coordgenlibs (1.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control (Build-Depends): Added cmake and libboost-dev (Closes:
+    #919333).
+
+ -- Michael Banck <mbanck@debian.org>  Wed, 16 Jan 2019 18:19:12 +0100
+
+schroedinger-coordgenlibs (1.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #910499)
+
+ -- Steffen Moeller <moeller@debian.org>  Sun, 07 Oct 2018 11:48:03 +0200
